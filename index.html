@@ -167,18 +167,48 @@
         <h3>Alias</h3>
           <p>Algunas variables y módulos están disponibles para una mayor practicidad:</p>
           <ul>
-            <li><strong>[C]</strong> Acceso rápido a bpy.context.</li>
-            <li><strong>[D]</strong> Acceso rápido a bpy.data.</li>
-            <li><strong>bpy</strong> Módulo de nivel superior de la API de Python de Blender.</li>
+            <li><strong>[C]:</strong> Acceso rápido a bpy.context.</li>
+            <li><strong>[D]:</strong> Acceso rápido a bpy.data.</li>
+            <li><strong>bpy:</strong> Módulo de nivel superior de la API de Python de Blender.</li>
           </ul>
         <h3>Vistazo inicial al entorno de la consola</h3>
           <p>Para ver la lista de funciones y variables globales, escribir dir() y pulsar Intro para ejecutar.</p>
           <p align="center"><img src="https://docs.blender.org/manual/es/latest/_images/editors_python-console_dir.png" /></p>
-
-
-
-
-
+          <p></p>
+          <p></p>
+          <hr>
+          <p></p>
+          <p></p>
+      <h2 align="center">Guardado automático y recuperación:</h2>
+      <p>Los fallos del ordenador, los cortes de luz o simplemente olvidarse de guardar pueden provocar la pérdida o el deterioro de tu trabajo. Puedes usar la función de guardado automático de Blender para reducir la probabilidad de perder archivos cuando ocurran estos incidentes.</p>
+        <h3>Configuración de guardado automático</h3>
+          <p>En preference, sección Save & Load, activa el Auto en File Preview Type.</p>
+          <p align="center"><img src="https://docs.blender.org/manual/es/3.3/_images/editors_preferences_section_save-load.png" /></p>
+          <p><strong>Auto guardado:</strong> Habilitará el Auto guardado. Esto le indicará a Blender que guarde automáticamente una copia de respaldo de los archivos de trabajo en progreso en la carpeta temporal.</p>
+          <p><strong>Temporizador (min.):</strong> Permitirá especificar la cantidad de minutos de espera entre cada operación de Auto guardado. El valor predefinido es de 2 minutos. El mínimo es 1, y el máximo es 60 (guardar cada una hora).</p>
+        <h3>Recuperación de versiones guardadas</h3>
+            <p>Por defecto, Blender guarda una copia de seguridad adicional al guardar archivos. De esta forma, al guardar, se cambia el nombre del archivo guardado previamente, añadiéndole una .blend1extensión, en lugar de sobrescribirlo. Este archivo se puede utilizar para revertir a un estado anterior.</p>
+            <p><strong>Versiones a guardar:</strong> Cantidad de versiones creadas (para copia de seguridad) al guardar versiones más recientes de un archivo. Esta opción mantendrá las versiones guardadas del archivo en la misma carpeta, usando las extensiones: .blend1, .blend2, etc, aumentando el número hasta la cantidad de versiones especificada.</p>
+            <p>Un truco es habilitar la vista de lista detallada al explorar los archivos guardados automáticamente para ver cuál es el más reciente.</p>
+            <p align="center"><img src="https://docs.blender.org/manual/es/4.2/_images/troubleshooting_recover_display-file-date.png" /></p>
+              <h4>Última versión</h4>
+                <p><strong>Archivo ‣ Recuperar ‣ Última sesión</strong></p>
+                <p>Recuperar última sesión abrirá el archivo quit.blend guardado en el Carpeta temporal cuando se sale de Blender de forma normal. Tener en cuenta que los archivos en el directorio temporal podrán ser eliminados al reiniciar la computadora (dependiendo de la configuración del sistema).</p>
+              <h4>Autoprotegido</h4>
+                <p><strong>Archivo ‣ Recuperar ‣ Auto guardado</strong></p>
+                <p>La función Recuperar guardado automático le permite abrir el archivo guardado automáticamente . Deberá navegar hasta su Carpeta temporal . Los archivos guardados automáticamente se nombran con un número aleatorio y tienen una extensión .blend.</p>
+              <h4>Origen confiable</h4>
+                <p>Cuando esta opción se encuentre activa, los scripts de Python y los controladores que pudieran estar incluidos en el archivo serán ejecutados automáticamente. Activarla sólo en caso de que se tratara de un archivo propio o proveniente de una fuente confiable.</p>
+                <p><strong>¡Advertencia!</strong> Al recuperar un archivo guardado automáticamente , se perderán todos los cambios realizados desde el último guardado . Solo existe un archivo guardado automáticamente.blend por cada archivo; es decir, Blender no conserva versiones anteriores. Por lo tanto, solo podrá restaurar el archivo guardado automáticamente más reciente.</p>
+                <p></p>
+                <p></p>
+                <hr>
+                <p></p>
+                <p></p>
+      <h5>Referencias:</h5>
+      <p></p>
+      <p></p>
+      <p></p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
