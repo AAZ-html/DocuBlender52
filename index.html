@@ -135,7 +135,6 @@
             <li>Utiliza Denoising para obtener una imagen clara con menos muestras.</li>
           </ul>
           <p align="center"><img src="https://auraprods.com/wp-content/uploads/2025/02/optimizar-blender-pc-1-1024x342.webp" /></p>
-
         <h3>Temas de color y apariencia</h3>
         <p>En Preferences, la sección Themes le permite personalizar la apariencia y los colores de la interfaz.</p>
           <p align="center"><img src="https://docs.blender.org/manual/es/latest/_images/editors_preferences_section_themes.webp" /></p>
@@ -147,11 +146,34 @@
           <p><strong>Guardar tema:</strong> Permitirá guardar un tema personalizado en la lista de preajustes. Esto guardará el tema en un archivo XML en la sub carpeta ./scripts/presets/interface_theme/ de uno de las carpetas de configuración.</p>
           <p><strong>Instalar:</strong> Permitirá cargar y aplicar un archivo XML de tema de Blender, agregándolo además a la lista de preajustes de tema.</p>
           <p><strong>Restablecer</strong> Restablecerá los colores a los del tema predefinido.</p>
+        <p></p>
+        <p></p>
+        <hr>
+        <p></p>
+        <p></p>
 
 
-
-
-
+      <h2 align="center">Uso de la Consola Python:</h2>
+      <p>La consola de Python ofrece una forma rápida de probar fragmentos de código y explorar la API de Blender. Ejecuta todo lo que escribas en su >>> indicador y cuenta con historial de comandos y autocompletado.</p>
+      <p align="center"><img src="https://docs.blender.org/manual/es/latest/_images/editors_python-console_default.png" /></p>
+        <h3>Cómo automatizar tareas repetitivas y mejorar la eficiencia</h3>
+          <p><strong>Mover a palabra anterior [Ctrl-Izquierda]:</strong> Mueve el cursor al principio de la palabra anterior. Si el cursor está en medio de una palabra, el cursor se mueve al principio de la palabra actual.</p>
+          <p><strong>Mover a palabra siguiente [Ctrl-Derecha]:</strong> Mueve el cursor al final de la siguiente palabra. Si el cursor está en medio de una palabra, el cursor se mueve al final de la palabra actual.</p>
+          <p><strong>Mover a inicio de línea:</strong> Mueve el cursor al inicio de la línea actual.</p>
+          <p><strong>Mover a fin de línea:</strong> Mueve el cursor al final de la línea actual.</p>
+          <p><strong>Borrar palabra anterior [Ctrl-Retroceso]:</strong> Elimina todo entre el cursor y el comienzo de la palabra anterior (separado por puntos). Si el cursor está en medio de una palabra, borra todo hasta el principio de la palabra actual.</p>
+          <p><strong>Borrar palabra siguiente Ctrl-Suprimir:</strong> Elimina todo entre el cursor y el final de la siguiente palabra. Si el cursor está en medio de una palabra, borra todo hasta el final de la palabra actual.</p>
+          <p><strong>Autocompletar [Tab]:</strong> Ver Completado automático.</p>
+        <h3>Alias</h3>
+          <p>Algunas variables y módulos están disponibles para una mayor practicidad:</p>
+          <ul>
+            <li><strong>[C]</strong> Acceso rápido a bpy.context.</li>
+            <li><strong>[D]</strong> Acceso rápido a bpy.data.</li>
+            <li><strong>bpy</strong> Módulo de nivel superior de la API de Python de Blender.</li>
+          </ul>
+        <h3>Vistazo inicial al entorno de la consola</h3>
+          <p>Para ver la lista de funciones y variables globales, escribir dir() y pulsar Intro para ejecutar.</p>
+          <p align="center"><img src="https://docs.blender.org/manual/es/latest/_images/editors_python-console_dir.png" /></p>
 
 
 
