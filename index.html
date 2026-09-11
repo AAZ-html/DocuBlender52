@@ -14,18 +14,41 @@
     <p></p>
     <h1 align="center">Manual para BLENDER</h1>
     <p></p>
-      <h2 align="center">Personalización del Menú y Barras de Herramientas:</h2>
-        <h3 align="center">Cómo personalizar las Herramientas</h3>
+      <h2 align="center">Personalización del Menú y Barras de Herramientas</h2>
+      <h3 align="center">Cómo personalizar los menús:</h3>
+      <p>Blender utiliza una variedad de menús diferentes para acceder a opciones y Operadores. Se puede interactuar con los menús de las siguientes maneras:</p>
+      <p><strong>Selección con el ratón:</strong> Hacer clic con LMB sobre el elemento deseado</p>  
+      <p><strong>Selección numérica:</strong> Puede utilizar las teclas numéricas en el teclado principal o el teclado numérico para introducir el elemento en la lista a ser seleccionado. Por ejemplo, 1 numérico seleccionará el primer elemento y así sucesivamente.</p>
+      <p>Si un menú es demasiado grande para caber en la pantalla, aparece un pequeño triángulo de desplazamiento en la parte superior o inferior. El desplazamiento se realiza moviendo el ratón por encima o por debajo de este triángulo.</p>
+      <p align="center"><img src="https://docs.blender.org/manual/es/4.0/_images/interface_window-system_introduction_default-startup.png" /></p>
+        <p></p>
+        <h3 align="center">Cómo personalizar las Herramientas:</h3>
           <h4>Favoritos Rápidos</h4>
           <p>El menú de Favoritos Rápidos reúne sus herramientas favoritas. Cualquier herramienta o elemento de menú se puede agregar a este menú emergente a través del menú contextual.</p>
-        <h4>Cambiando herramientas:</h4>
+          <p align="center"><img src="https://preview.redd.it/changing-quick-favourites-pie-menu-to-wheel-menu-v0-9ze30we8a0d81.png?width=249&format=png&auto=webp&s=4a5bc942ae3f17bb3d01260ce93606ecb5b6f62a" /></p>
+          <h4>Cambiando herramientas:</h4>
           <p>Si tiene habilitado Click Tool Prompt en las Preferencias del Mapa de Teclado, al tocar <em>Alt</em> se mostrará un mensaje de herramienta en la Barra de Estado. A continuación, puede pulsar una tecla para seleccionar la herramienta correspondiente o pulsar <em>Alt</em> de nuevo para cancelar la indicación.</p>
             <h5>Herramienta de Respaldo (Fallback)</h5>
               <p>La herramienta de respaldo es la que está seleccionada de forma predeterminada (es decir, la que está en la parte superior de la barra de herramientas). Puede cambiarlo manteniendo presionado <em>LMB</em> en el botón de la barra de herramientas o presionando <em>Alt-W</em> para obtener un menú circular.</p>
             <h5>Selección Cíclica de Herramientas</h5>
              <p>Si se asocia una tecla a una herramienta que es parte de un grupo, puede habilitar la opción Cycle en el editor del mapa de teclado. Presiones sucesivas recorrerán cíclicamente después las herramientas del grupo.</p>
              <p>Esto está habilitado de forma predeterminada para las herramientas de selección en la Vista 3D, por ejemplo: al presionar W se alternará entre Seleccionar Marco, Seleccionar Círculo, etc.</p> 
-          <h3 align="center">Cómo personalizar el Workspace</h3>
+              <p></p>
+              <hr>
+              <p></p>
+      <h2 align="center">Configuración de Atajos de Teclado:</h2>
+         <h3>Asignación de atajos de teclado</h3>     
+            <p>Podemos ver y buscar todos los atajos de teclado actuales de Blender desde el panel de preferencias de Blender, en la pestaña denominada "Keymaps".</p>
+            <p>Una vez que hayamos encontrado un atajo de teclado que deseemos editar, hagamos clic en él y aparecerá el mensaje "Pulse una tecla". Cuando esto aparezca, Blender registrará la siguiente pulsación de tecla o combinación de teclas que pulsemos.</p>
+              <p align="center"><img src="https://docs.blender.org/manual/en/latest/_images/editors_preferences_section_keymap.webp" /></p>
+          <h3>Importar/Exportar configuraciones</h3>
+              <p>Los espacios de trabajo se guardan en el archivo .blend. Al abrir un archivo, habilitar la opción "Cargar interfaz de usuario" en el explorador de archivos indica que Blender debe usar la disposición de pantalla del archivo en lugar de la actual.</p>
+              <p>Se puede guardar un conjunto personalizado de espacios de trabajo como parte de la configuración predeterminada .</p>
+              <p></p>
+              <hr>
+        <p></p>
+      <h2 align="center">Workspace:</h2>
+        <h3 align="center">Cómo personalizar el Workspace:</h3>
           <p>Los espacios de trabajo son, en esencia, diseños de ventana predefinidos. Cada espacio de trabajo consta de un conjunto de áreas que contienen editores y está orientado a una tarea específica, como modelado, animación o programación.</p>
             <h4>Controles</h4>
               <p><strong>Agregar espacio de trabajo:</strong> Agrega un nuevo espacio de trabajo a partir de una plantilla predefinida (por ejemplo , Modelado , Escultura , Composición ).</p>
@@ -38,39 +61,6 @@
                 <li>Seguimiento de movimiento</li>
                 <li>Edición de vídeo</li>
               </ul>
-              <p></p>
-            <p></p>
-        <hr>
-        <p></p>
-        <h3 align="center">Ventana de Inicio Predefinida de Blender.</h3>
-          <strong><p>La interfaz de Blender está separada en tres partes principales:</p></strong>
-          <ul>
-            <li>La Barra superior en la parte superior contiene el menú principal, que se utiliza para guardar, importar y exportar archivos, configurar opciones y lanzar el procesamiento, entre otras funciones.</<li>>
-            <li>Las áreas en la sección central de la interfaz, que es el espacio principal de trabajo.</li>
-            <li>La Barra de estado en la parte inferior, que mostrará sugerencias sobre accesos directos y estadísticas relevantes.<li>
-            </ul>
-          <p align="center"><img src="https://docs.blender.org/manual/es/latest/_images/interface_window-system_introduction_default-screen.png" alt="" width="1440" height="900"/></p>
-          <p>Diseño de pantalla predefinido de Blender. Barra superior (en azul), Áreas (en verde) y Barra de estado (en rojo).</p>
-          <p></p>
-          <hr>
-          <p></p>
-        <h3 align="center">Personalización</h3>
-          <p></p>
-          <h4>Atajos de Teclado</h4>
-            <p>Blender hace un uso intensivo de atajos de teclado como forma de acelerar el trabajo. Estos podrán ser personalizados mediante el Editor de mapa de teclado.</p>
-          <p></p>
-          <h4>Colores del tema</h4>
-            <p>Blender permite cambiar la mayoría de los colores de su interfaz, para satisfacer las necesidades de cada usuario. Si los colores que aparecen en la pantalla no coincidieran con los mostrados en este manual, es posible que el tema predefinido haya sido modificado. Será posible crear nuevos temas, así como seleccionar y modificar uno ya existente, abriendo la ventana de Preferencias y haciendo clic en la pestaña Temas.</p>
-          <p></p>
-          <hr>
-          <p></p>
-        <h3 align="center">Accesibilidad</h3>
-          <p>Blender presenta varias opciones para la personalización de la visibilidad, incluida la escala de su resolución y la capacidad de cargar tipografías personalizadas. Estos ajustes podrán ser configurados en las Preferencias de la Interfaz.</p>
-          <p></p>
-          <hr>
-          <p></p>
-      <h2>Personalización del Menú y Barras de Herramientas</h2>
-            <p></p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
